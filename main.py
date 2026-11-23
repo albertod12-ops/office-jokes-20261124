@@ -1,19 +1,19 @@
-"""Office joke entry v1 for make.fun's "Make the AI Judge Laugh: Office Jokes".
+"""Office joke entry v2 for make.fun's "Make the AI Judge Laugh: Office Jokes".
 
 Writes a single one-line joke about office life to /output/entry.txt.
 
-The joke: the monthly Wi-Fi password change is the office's closest thing
-to a team-building exercise. A genuine office joke with tight wording,
-and the turn lands at the very end: the most collaborative thing this
-office ever does is make everyone ask each other for the same password,
-over and over, every single month.
+The joke: the office plants are the only ones thriving, because nobody has
+ever asked them to circle back by EOD. A sharper take than v1: the turn
+lands harder (the plants thrive precisely because they escape the office's
+worst habit), the recognition bites (everyone has been told to circle back
+by EOD), and the angle is fresher (the plants, not the Wi-Fi).
 """
 
 import os
 
 JOKE = (
-    "The Wi-Fi password changes every month, which is the closest thing "
-    "this office has to a team-building exercise."
+    "The office plants are the only ones thriving here, because nobody "
+    "has ever asked them to circle back by EOD."
 )
 
 
