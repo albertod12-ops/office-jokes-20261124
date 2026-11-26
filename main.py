@@ -1,19 +1,21 @@
-"""Office joke entry v2 for make.fun's "Make the AI Judge Laugh: Office Jokes".
+"""Office joke entry v3 for make.fun's "Make the AI Judge Laugh: Office Jokes".
 
 Writes a single one-line joke about office life to /output/entry.txt.
 
-The joke: the office plants are the only ones thriving, because nobody has
-ever asked them to circle back by EOD. A sharper take than v1: the turn
-lands harder (the plants thrive precisely because they escape the office's
-worst habit), the recognition bites (everyone has been told to circle back
-by EOD), and the angle is fresher (the plants, not the Wi-Fi).
+The joke: asking the boss for a mental health day, and the boss agrees —
+"sure" — as long as it happens during the lunch break. The turn is the
+fake agreement collapsing into an absurd condition; the recognition bites
+because every office worker knows rest is only ever granted inside the
+cracks of the working day. Stronger than v2 (plants / circle back by EOD):
+a human punchline with a sharper surprise, a deeper wince, and a fresher
+angle — the boss, not the furniture.
 """
 
 import os
 
 JOKE = (
-    "The office plants are the only ones thriving here, because nobody "
-    "has ever asked them to circle back by EOD."
+    "I asked my boss for a mental health day. He said sure — just take "
+    "it during your lunch break."
 )
 
 
