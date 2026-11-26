@@ -1,6 +1,7 @@
 """Office joke entry v3 for make.fun's "Make the AI Judge Laugh: Office Jokes".
 
-Writes a single one-line joke about office life to /output/entry.txt.
+Writes a single one-line joke about office life to entry.txt in the
+output directory (/output, or $MAKEFUN_OUTPUT_DIR when the grader sets it).
 
 The joke: asking the boss for a mental health day, and the boss agrees —
 "sure" — as long as it happens during the lunch break. The turn is the
@@ -21,8 +22,9 @@ JOKE = (
 
 def main() -> None:
     os.umask(0o022)
-    os.makedirs("/output", exist_ok=True)
-    path = "/output/entry.txt"
+    out_dir = os.environ.get("MAKEFUN_OUTPUT_DIR", "/output")
+    os.makedirs(out_dir, exist_ok=True)
+    path = os.path.join(out_dir, "entry.txt")
     with open(path, "w", encoding="utf-8") as f:
         f.write(JOKE)
     os.chmod(path, 0o644)
